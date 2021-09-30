@@ -1,0 +1,27 @@
+Warning: -fp-relaxed will override all instances of #pragma clang fp reassoc
+Warning: -fpc will override all instances of #pragma clang fp contract(fast)
+Warning: Command has been deprecated. The compiler now duplicates the store ring by default. To force use of a single store ring, please use -force-single-store-ring.
+##aoc: Environment checks completed successfully.
+Quartus location: /cm/shared/opt/intelFPGA_pro/19.4.0/quartus/bin/quartus_sh
+AOCL_TMP_DIR directory was specified at /scratch/FPGA.
+Ensure Linux and Windows compiles do not share the same directory as files may be incompatible.
+##aoc: Cached files in /scratch/FPGA may be used to reduce compilation time
+##aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the Intel FPGA SDK for OpenCL Best Practices Guide for information on performance tuning applications for FPGAs.
+quartus_sh -t scripts/pre_flow_pr.tcl
+remove /upb/departments/pc2/users/p/paolog/noctua-scratch/systo-loopfusion/aocx/20210608-132853/krnl_systo-s4/info.json
+High-effort hardware generation selected, compile time may increase signficantly.
+quartus_cdb -t compile_script.tcl top
+Error (20264): Placement failed to find a legal solution due to row legality failure.
+Error (20263): Placement failed to find a legal solution for 0 LABs, 0 M20Ks and 30 DSPs in the locations from (0, 0) to (62, 68).
+Error (170077): Cannot place the following nodes
+Error: An error occurred during placement
+Error: Quartus Prime Fitter was unsuccessful. 5 errors, 133 warnings
+Error: Can't run the Timing Analyzer (quartus_sta) -- Fitter (quartus_fit) failed or was not run. Run the Fitter (quartus_fit) successfully before running the Timing Analyzer (create_timing_netlist).
+Error: Quartus Prime Timing Analyzer was unsuccessful. 1 error, 0 warnings
+Error: Quartus Fitter has failed! Breaking execution...
+Error (23035): Tcl error: 
+Error (23031): Evaluation of Tcl script compile_script.tcl unsuccessful
+Error: Quartus Prime Compiler Database Interface was unsuccessful. 3 errors, 0 warnings
+For more details, full Quartus compile output can be found in files quartuserr.tmp and quartus_sh_compile.log.
+Error: Compiler Error, not able to generate hardware
+

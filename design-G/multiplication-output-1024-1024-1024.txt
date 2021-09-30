@@ -1,0 +1,61 @@
+Selecting OpenCL device (PLATFORM_ID=0, DEVICE_ID=0)
+  Platform: Intel(R) FPGA SDK for OpenCL(TM)
+  Device: p520_hpc_sg280l : BittWare Stratix 10 OpenCL platform (aclbitt_s10_pcie0)
+
+Loading bitstream form krnl_systo-s4.aocx ...
+0 0
+Kernel creation
+  krnl_systo_0: OK
+
+Matrix multiplication sizes
+  A = (1024, 1024)
+  B = (1024, 1024)
+  C = (1024, 1024)
+
+Computing matrix multiplication on host (it can take long) ... 
+Set arguments
+	OK
+
+Kernel execution start
+Kernel execution finish
+
+Kernel times [ns]
+  krnl_systo_0: start=609815398285079	stop=609815399283156	elapsed=998077
+
+Result check
+
+  Floating-point class output summary
+    #NaNs:	0 (0 %)
+    #infs:	0 (0 %)
+    #normals:	1048576 (100 %)
+    #subnormals:	0 (0 %)
+    #zeros:	0 (0 %)
+
+  Correctness
+    Max ULP distance: 32  at position: (184, 459)  host: 249.828  fpga: 249.8285
+    ULP distance: min(0) max(32) mean(4.249751)
+
+    Max relative error: 1.968534e-06  at position: (365, 338)  host: 263.5458  fpga: 263.5463
+
+  ULP histogram
+    0  ULP:	86075	(8.208752%)
+    1  ULP:	167619	(15.98539%)
+    2  ULP:	154674	(14.75086%)
+    3  ULP:	135941	(12.96434%)
+    4  ULP:	114128	(10.88409%)
+    5  ULP:	91665	(8.741856%)
+    6  ULP:	72689	(6.932163%)
+    7  ULP:	55598	(5.302238%)
+    8  ULP:	42621	(4.064655%)
+    9  ULP:	32265	(3.07703%)
+    10  ULP:	24483	(2.334881%)
+    11  ULP:	18759	(1.788998%)
+    12  ULP:	14170	(1.351357%)
+    13  ULP:	10591	(1.010036%)
+    14  ULP:	7958	(0.758934%)
+    15  ULP:	5985	(0.5707741%)
+
+Kernels performances
+  Overall kernel execution time: 998077 ns
+  Overall kernel floating-point performance: 2150.571 GFLOPS
+ 
