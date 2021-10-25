@@ -2,7 +2,7 @@
 
 This repository contains the codes related to the paper
 
-Paolo Gorlani, Christian Plessl, *High Level Synthesis Implementation of a Three-dimensional Systolic Array Architecture for Matrix Multiplications on Intel Stratix 10 FPGAs*.
+Paolo Gorlani, Christian Plessl, *High Level Synthesis Implementation of a Three-dimensional Systolic Array Architecture for Matrix Multiplications on Intel Stratix 10 FPGAs*. (http://arxiv.org/abs/2110.11521)
 
 ### Content
 
